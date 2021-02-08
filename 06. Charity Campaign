@@ -1,0 +1,18 @@
+#	Торта - 45 лв.
+#	Гофрета - 5.80 лв.
+#	Палачинка – 3.20 лв.
+# 1/8 от крайната сума ще бъде използвана за покриване на разходите за продуктите по време на кампанията
+days = int(input())
+confectioner = int(input())
+cakes = int(input())
+waffles = int(input())
+pancakes = int(input())
+
+cake_price = cakes * 45
+waffles_price = waffles * 5.80
+pancakes_price = pancakes * 3.20
+
+price_day = (cake_price + waffles_price + pancakes_price) * confectioner
+campaign_sum = price_day * days
+total_sum = campaign_sum - (campaign_sum / 8)
+print(total_sum)
