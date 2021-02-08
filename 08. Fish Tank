@@ -1,0 +1,10 @@
+length = int(input())
+width = int(input())
+height = int(input())
+volume_percent = float(input())
+
+volume_aquarium = length * width * height
+litres = volume_aquarium * 0.001
+need_percent = volume_percent * 0.01
+needed_litres = litres * (1 - need_percent)
+print(needed_litres)
