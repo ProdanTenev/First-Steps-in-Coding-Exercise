@@ -1,0 +1,7 @@
+book_sheets = int(input())
+hour_sheets = int(input())
+days = int(input())
+
+readtime = book_sheets / hour_sheets
+hours_day = readtime / days
+print(hours_day)
