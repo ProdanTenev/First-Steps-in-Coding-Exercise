@@ -1,0 +1,20 @@
+# цената на  малините е на половина по-ниска от тази на ягодите;
+# цената на портокалите е с 40% по-ниска от цената на малините;
+# цената на бананите е с 80% по-ниска от цената на малините.
+
+price_strawberries = float(input())
+bananas = float(input())
+oranges = float(input())
+raspberries = float(input())
+kg_strawberries = float(input())
+
+raspberries_price = price_strawberries / 2
+oranges_price = raspberries_price - (raspberries_price * 0.4)
+bananas_price = raspberries_price - (raspberries_price * 0.8)
+
+sum_raspberries = raspberries * raspberries_price
+sum_oranges = oranges * oranges_price
+sum_bananas = bananas_price * bananas
+sum_strawberries = kg_strawberries * price_strawberries
+total_sum = sum_strawberries + sum_oranges + sum_raspberries + sum_bananas
+print(total_sum)
